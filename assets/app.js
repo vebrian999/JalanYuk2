@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Set the current year
+  // Tetapkan tahun saat ini
   document.getElementById("year").innerText = new Date().getFullYear();
 
-  // Mobile menu functionality
+  // Fungsionalitas menu mobile
   const mobileMenuButton = document.getElementById("mobile-menu");
   const navList = document.querySelector("nav ul");
 
@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
     navList.classList.toggle("show");
   });
 
-  // Navbar background change on scroll
+  // Perubahan latar belakang navbar saat di-scroll
   const nav = document.querySelector("nav");
 
   window.addEventListener("scroll", function () {
     nav.classList.toggle("scrolled", window.scrollY > 50);
   });
 
-  // Highlight the active link based on the current section
+  // Sorot tautan aktif berdasarkan bagian saat ini
   function highlightLink(sectionId, linkId) {
     const section = document.getElementById(sectionId);
     const link = document.getElementById(linkId);
@@ -35,23 +35,23 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // Check on page load
+    // Periksa saat halaman dimuat
     handleScroll();
 
-    // Check when scrolling
+    // Periksa saat di-scroll
     window.addEventListener("scroll", handleScroll);
   }
 
-  // Highlight the links for different sections
+  // Sorot tautan untuk bagian-bagian berbeda
   highlightLink("kategori", "kategori-link");
   highlightLink("featured", "featured-link");
   // highlightLink("AboutMe", "AboutMe-link");
   highlightLink("blog", "blog-link");
 });
 
-// Background image change for jumbotron
+// Perubahan gambar latar belakang untuk jumbotron
 const jumbotron = document.querySelector(".jumbotron");
-const images = ["./assets/img/header-bg (1).png", "./assets/img/header-bg (2).png", "./assets/img/header-bg (3).png", "./assets/img/header-bg (4).png"];
+const images = ["./assets/img/header-bg (1).jpg", "./assets/img/header-bg (2).jpg", "./assets/img/header-bg (3).jpg", "./assets/img/header-bg (4).jpg"];
 let currentImageIndex = 0;
 
 function changeBackgroundImage() {
@@ -60,8 +60,8 @@ function changeBackgroundImage() {
   jumbotron.style.backgroundImage = imageUrl;
 }
 
-// Call the function initially
+// Panggil fungsi secara awal
 changeBackgroundImage();
 
-// Set interval to change the background image every few seconds
-setInterval(changeBackgroundImage, 5000); // Change 5000 to the interval you desire (in milliseconds)
+// Atur interval untuk mengubah gambar latar belakang setiap beberapa detik
+setInterval(changeBackgroundImage, 5000); // Ubah 5000 menjadi interval yang diinginkan (dalam milidetik)
