@@ -294,12 +294,13 @@ main {
   border-radius: 10px;
   font-style: italic;
 }
-.fa {
-  padding: 15px;
+.social a {
+  padding: 10px;
   font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
+  font-size: 25px;
 }
 
 .fa:hover {
@@ -487,6 +488,15 @@ main {
     transform: none;
     margin-bottom: 10px;
     border-radius: 0px;
+  }
+
+  .social a {
+    padding: 5px;
+    width: 30px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
   }
 
   .fa {
