@@ -191,7 +191,9 @@ nav .logo {
   transform: scale(1.05);
   color: #9bb8cd;
 }
-
+.blog-content a:hover {
+  color: #9bb8cd;
+}
 .blog-content a {
   text-decoration: none;
   color: black;
@@ -231,8 +233,12 @@ nav .logo {
   display: flex;
   width: 400px;
   height: auto;
-  text-align: center;
   padding: 25px;
+  gap: 20px;
+}
+
+.popular-post h3 {
+  text-align: left;
 }
 
 .popular-post img {
@@ -285,7 +291,7 @@ main {
 }
 
 .quotes {
-  background-color: #eec759;
+  background-color: #9bb8cd;
   text-align: center;
   font-size: 20px;
   color: white;
@@ -486,7 +492,7 @@ main {
     position: static;
     margin: 0px;
     transform: none;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     border-radius: 0px;
   }
 
